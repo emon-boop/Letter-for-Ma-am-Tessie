@@ -1,6 +1,3 @@
-/* =========================
-   RESET
-========================= */
 
 * {
     margin: 0;
@@ -10,20 +7,12 @@
 }
 
 
-/* =========================
-   BODY
-========================= */
-
 body {
     font-family: Arial, sans-serif;
     color: #333;
     background: #f7f8fc;
 }
 
-
-/* =========================
-   NAVIGATION
-========================= */
 
 header {
     position: fixed;
@@ -69,11 +58,6 @@ nav a {
 nav a:hover {
     color: #4b6cb7;
 }
-
-
-/* =========================
-   HERO / HOME
-========================= */
 
 .hero {
     min-height: 100vh;
@@ -127,11 +111,6 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-
-/* =========================
-   BUTTON
-========================= */
-
 .btn {
     display: inline-block;
 
@@ -158,9 +137,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   LETTER
-========================= */
+
 
 .letter-section {
     min-height: 100vh;
@@ -210,10 +187,6 @@ nav a:hover {
 }
 
 
-/* =========================
-   THANK YOU
-========================= */
-
 .thankyou {
     min-height: 50vh;
 
@@ -243,9 +216,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+
 
 footer {
     text-align: center;
@@ -260,9 +231,6 @@ footer {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 600px) {
 
@@ -297,4 +265,59 @@ footer {
     .thankyou h2 {
         font-size: 30px;
     }
+
+
+.teacher-photo {
+    width: 160px;
+    height: 160px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 5px solid white;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.music-player {
+    margin-top: 25px;
+}
+
+.music-player p {
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #4b6cb7;
+
+    margin-bottom: 10px;
+}
+
+.music-player audio {
+    width: 300px;
+    max-width: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+    .teacher-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .music-player audio {
+        width: 100%;
+    }
+}
 }
